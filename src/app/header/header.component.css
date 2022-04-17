@@ -1,0 +1,28 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.header-heading {
+  color: #FBF5FF;
+  font-size: 36px;
+}
+
+.header-legend {
+  display: flex;
+  gap: 60px
+}
+
+@media (max-width: 1200px) {
+  .header {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 900px) {
+  .header-legend {
+    gap: 32px;
+  }
+}

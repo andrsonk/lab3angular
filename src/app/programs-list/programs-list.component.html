@@ -1,0 +1,9 @@
+<ul class='programs-list'>
+  <app-program
+    *ngFor="let program of programs"
+    [program]="program"
+    [isSelected]="program.id === selectedProgram?.id"
+    (setSelectedEvent)="setSelected($event)"
+  >
+  </app-program>
+</ul>

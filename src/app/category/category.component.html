@@ -1,0 +1,7 @@
+<div class='category__container'>
+  <img [src]="iconByCategory(category)" alt="icon" />
+
+  <p *ngIf="withLabel">
+    {{ labelByCategory(category) }}
+  </p>
+</div>

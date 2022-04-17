@@ -1,0 +1,31 @@
+<header class='header'>
+  <h1 class='header-heading'>
+    Мои тренировки
+  </h1>
+
+  <legend class='header-legend'>
+    <app-category
+      [category]="Category.Cardio"
+      [withLabel]="true"
+    >
+    </app-category>
+
+    <app-category
+      [category]="Category.PowerTraining"
+      [withLabel]="true"
+    >
+    </app-category>
+
+    <app-category
+      [category]="Category.WeightLoss"
+      [withLabel]="true"
+    >
+    </app-category>
+
+    <app-category
+      [category]="Category.Stretching"
+      [withLabel]="true"
+    >
+    </app-category>
+  </legend>
+</header>

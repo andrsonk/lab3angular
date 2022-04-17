@@ -1,0 +1,18 @@
+<div class='app-container'>
+  <app-programs-list
+    [programs]="programs"
+    [selectedProgram]="selectedProgram"
+    (setSelectedEvent)="setSelected($event)"
+  >
+  </app-programs-list>
+  
+  <div class="selected_program_container">
+    <app-selected-program
+      *ngIf="selectedProgram"
+      [selectedProgram]="selectedProgram"
+      (closeSelectedEvent)="closeSelected()"
+    >
+    </app-selected-program>
+  </div>
+  
+</div>

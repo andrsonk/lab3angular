@@ -1,0 +1,19 @@
+<li class="exercise">
+  <div class="exercise-name">
+    <app-category
+      [category]="exersize.category"
+    >
+    </app-category>
+    <p [class]="exersizeColorClass(exersize.category)">{{exersize.name}}</p>
+  </div>
+  <div class="exercise-repeating">
+    {{exersize.repeating.count}} - {{exersize.repeating.times}}
+
+    <button
+      (click)="toggleCompleted()"
+      [class]="{ 'exersize-set-complete-button': true, completed}"
+    >
+      ✓
+    </button>
+  </div>
+</li>

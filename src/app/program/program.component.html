@@ -1,0 +1,38 @@
+<li class='program'>
+  <img
+    class='program-image'
+    [src]="program.image"
+    alt='Program background'
+  />
+
+  <div class='program-info'>
+    <h2>
+      {{program.name}}
+    </h2>
+    <p>
+      Сложность тренировки: {{getComplexityLabel(program.complexity)}}
+    </p>
+
+    <div class="program-details">
+        <div class="program-time">
+          <img src='assets/clock.svg' alt="clock icon" />
+          {{program.duration}} минут
+        </div>
+
+        <div class="program-markers">
+          <app-category
+            *ngFor="let category of program.categories"
+            [category]="category"
+          >
+          </app-category>
+        </div>
+    </div>
+
+    <button
+      [class]="{'program-button': true, 'selected': isSelected}"
+      (click)="setSelected(program)"
+    >
+      <img src='assets/arrow-bottom.svg' alt="Select program button" />
+    </button>
+  </div>
+</li>

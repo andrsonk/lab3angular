@@ -1,0 +1,34 @@
+.selected-program-container {
+  position: relative;
+  padding: 50px 60px 60px 60px;
+  background: #2C1146;
+  border-radius: 36px;
+}
+
+.selected-program-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.selected-program-button {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 50%);
+}
+
+.program-time {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  font-size: 14px;
+
+  color: #B14DFF;
+}
+.exercises-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 32px;
+}

@@ -1,0 +1,34 @@
+.exercise {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 24px;
+
+  background: #36184F;
+  border-radius: 19px;
+}
+
+.exercise-name {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.exercise-repeating {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+
+  font-size: 14px;
+  color: #FBF5FF;
+}
+
+.exersize-set-complete-button {
+  width: 64px;
+}
+
+.exersize-set-complete-button.completed {
+  background-color: #FF6ABA;
+}
